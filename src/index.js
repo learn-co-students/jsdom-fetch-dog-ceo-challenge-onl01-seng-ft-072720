@@ -95,6 +95,7 @@ function loadBreeds() {
     .then(data => {
       // Object.keys
       // for..in
+      debugger;
       breedList = Object.keys(data.message)
 
       breedList.forEach(breed => {
