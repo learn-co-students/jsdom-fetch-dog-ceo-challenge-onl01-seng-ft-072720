@@ -37,15 +37,15 @@ dropdown.addEventListener("change", event => {
   console.log(filteredBreeds)
 
   // iterate over all the list items
-  // dogList.querySelectorAll("li").forEach(li => {
+  dogList.querySelectorAll("li").forEach(li => {
   //   // check if it starts with the letter
-  //   if (!li.textContent.startsWith(letter)) {
+    if (!li.textContent.startsWith(letter)) {
   //     // hide it!
-  //     li.style.display = "none"
-  //   } else {
-  //     li.style.display = ""
-  //   }
-  // })
+      li.style.display = "none"
+    } else {
+      li.style.display = ""
+    }
+  })
 })
 
 // find the closest parent
