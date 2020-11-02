@@ -3,6 +3,7 @@ console.log('%c HI', 'color: firebrick')
 const dogList = document.querySelector("#dog-breeds")
 const dropdown = document.querySelector("#breed-dropdown")
 
+
 // Approach 1: Stateful
 // store all the breeds in an array
 // filter the array
@@ -37,15 +38,15 @@ dropdown.addEventListener("change", event => {
   console.log(filteredBreeds)
 
   // iterate over all the list items
-  // dogList.querySelectorAll("li").forEach(li => {
-  //   // check if it starts with the letter
-  //   if (!li.textContent.startsWith(letter)) {
-  //     // hide it!
-  //     li.style.display = "none"
-  //   } else {
-  //     li.style.display = ""
-  //   }
-  // })
+  dogList.querySelectorAll("li").forEach(li => {
+    // check if it starts with the letter
+    if (!li.textContent.startsWith(letter)) {
+      // hide it!
+      li.style.display = "none"
+    } else {
+      li.style.display = ""
+    }
+  })
 })
 
 // find the closest parent
