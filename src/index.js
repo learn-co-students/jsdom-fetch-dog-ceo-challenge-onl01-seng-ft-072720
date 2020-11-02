@@ -51,7 +51,7 @@ dropdown.addEventListener("change", event => {
 // find the closest parent
 dogList.addEventListener("click", event => {
   // use a condition to figure out what element was clicked
-  if (event.target.matches("li")) {
+  if (event.target.matches("ul")) {
     // run our DOM logic
     event.target.style.color = "red"
   }
@@ -84,9 +84,9 @@ function loadImages() {
 
 
 function renderBreed(breed) {
-  const li = document.createElement("li")
-  li.textContent = breed
-  dogList.append(li)
+  const ul = document.createElement("ul")
+  ul.textContent = breed
+  dogList.append(ul)
 }
 
 function loadBreeds() {
