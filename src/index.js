@@ -13,7 +13,6 @@ const dropdown = document.querySelector("#breed-dropdown")
 // iterate over all the lis
 // if they don't start with the letter, hide them with CSS
 
-// State
 let breedList = []
 
 // added the event listener to the dropdown
