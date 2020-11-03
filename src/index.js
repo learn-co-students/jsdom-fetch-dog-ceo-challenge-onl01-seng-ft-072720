@@ -8,6 +8,11 @@ const dropdown = document.querySelector("#breed-dropdown")
 // filter the array
 // (also, clear the list)
 // use that list to display
+fetch(imgUrl)
+  .then(response => response.json())
+  .then(result => {
+    dogImages(result.message)
+  })
 
 // Approach 2: DOM Source Of Truth
 // iterate over all the lis
