@@ -3,15 +3,7 @@ console.log('%c HI', 'color: firebrick')
 const dogList = document.querySelector("#dog-breeds")
 const dropdown = document.querySelector("#breed-dropdown")
 
-// Approach 1: Stateful
-// store all the breeds in an array
-// filter the array
-// (also, clear the list)
-// use that list to display
 
-// Approach 2: DOM Source Of Truth
-// iterate over all the lis
-// if they don't start with the letter, hide them with CSS
 
 // State
 let breedList = []
@@ -35,24 +27,10 @@ dropdown.addEventListener("change", event => {
   })
 
   console.log(filteredBreeds)
-
-  // iterate over all the list items
-  // dogList.querySelectorAll("li").forEach(li => {
-  //   // check if it starts with the letter
-  //   if (!li.textContent.startsWith(letter)) {
-  //     // hide it!
-  //     li.style.display = "none"
-  //   } else {
-  //     li.style.display = ""
-  //   }
-  // })
 })
 
-// find the closest parent
 dogList.addEventListener("click", event => {
-  // use a condition to figure out what element was clicked
   if (event.target.matches("li")) {
-    // run our DOM logic
     event.target.style.color = "red"
   }
 })
